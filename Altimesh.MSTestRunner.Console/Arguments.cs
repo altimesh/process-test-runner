@@ -23,7 +23,7 @@ namespace Altimesh.TestRunner.Console
                 Usage(); Environment.Exit(1);
             }
 
-            Dictionary<string, string> result = new Dictionary<string, string>();
+            Dictionary<string, string> result = [];
 
             for (int i = 0; i < rawArgs.Length; i += 2)
             {
@@ -68,7 +68,7 @@ namespace Altimesh.TestRunner.Console
 
         public static Dictionary<string, string> WaitForArguments()
         {
-            Dictionary<string, string> result = new Dictionary<string, string>();
+            Dictionary<string, string> result = [];
             System.Console.WriteLine("type input dll path (absolute or relative):");
             do
             {
@@ -148,7 +148,7 @@ namespace Altimesh.TestRunner.Console
 
         public static void Usage()
         {
-            System.Console.WriteLine("Altimesh.MSTestRunner.Console -dllName <DLLNAME> -trxName <TRXNAME> [optionalargs]");
+            System.Console.WriteLine("process-test-runner -dllName <DLLNAME> -trxName <TRXNAME> [optionalargs]");
             System.Console.WriteLine("[DLLNAME] path to the dll containing tests - relative or absolute");
             System.Console.WriteLine("          if relative the dll and this executable must be in the same directory");
             System.Console.WriteLine("[TRXNAME] path to the dll containing tests - relative or absolute");
