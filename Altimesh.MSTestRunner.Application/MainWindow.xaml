@@ -1,0 +1,29 @@
+﻿<Window x:Class="Altimesh.MSTestRunner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" ResizeMode="CanResize">
+    <Grid>
+        <Button Content="Run Tests" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="80" Height="24" Click="OnRunTests"/>
+        <Button x:Name="LoadDLL" Content="Load DLL" HorizontalAlignment="Left" Margin="111,20,0,0" VerticalAlignment="Top" Width="87" Click="LoadDLLOnClick" Height="24"/>
+        <TextBox Height="23" Margin="213,20,10,0" TextWrapping="NoWrap" Text="{Binding dllName}" VerticalAlignment="Top" />
+        <ListBox x:Name="TestList" Margin="10,62,10,10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"></ColumnDefinition>
+                            <ColumnDefinition Width="20"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Button Content="Run" Grid.Column="0" Click="RunSingleTest" Margin="0,0,0,0"></Button>
+                        <TextBlock Background="{Binding color}" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="{Binding className}" Grid.Column="2"></TextBlock>
+                        <TextBlock Text="{Binding testName}" Grid.Column="3"></TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</Window>

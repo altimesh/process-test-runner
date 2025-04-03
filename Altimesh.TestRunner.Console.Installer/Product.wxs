@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <?define Manufacturer="ALTIMESH SAS"?>
+  <?ifdef env.HYBRIDIZER_BUILD_NUMBER ?>
+  <?ifdef env.SVN_REVISION ?>
+  <?define ProductVersion = "1.0.$(env.HYBRIDIZER_BUILD_NUMBER).$(env.SVN_REVISION)" ?>
+  <?endif ?>
+  <?else?>
+  <?define ProductVersion="1.0.0.0" ?>
+  <?endif ?>
+  
+	<Product Id="*" Name="Altimesh.TestRunner.Console.Installer" Language="1033" Version="$(var.ProductVersion)" Manufacturer="$(var.Manufacturer)" UpgradeCode="c3094e4a-512b-4c4d-a90b-f6345b8eea56">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="Altimesh.TestRunner.Console.Installer" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+          <Directory Id="COMPANYFOLDER" Name="ALTIMESH">
+            <Directory Id="INSTALLFOLDER" Name="TestRunner" />
+          </Directory>
+        </Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<Component Id="ProductComponent">
+      <File Source="$(var.Altimesh.TestRunner.Console.TargetPath)" />
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Altimesh.TestAdapter.Installer.regis portalez.14007863-53e3-419b-84b0-6b4907d06d22" Version="0.0.1" Language="en-US" Publisher="regis portalez" />
+    <DisplayName>Altimesh.TestAdapter.Installer</DisplayName>
+    <Description xml:space="preserve">Altimesh TestAdapter Installer
+This test adapter runs one process per test, and run them in parallel (optiona)</Description>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="Altimesh.TestAdapter" Path="|Altimesh.TestAdapter|" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="Altimesh.TestRunner.Library" Path="|Altimesh.TestRunner.Library|" AssemblyName="|Altimesh.TestRunner.Library;AssemblyName|" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="Altimesh.TestRunner.Process" Path="|Altimesh.TestRunner.Process|" AssemblyName="|Altimesh.TestRunner.Process;AssemblyName|" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="TrxLibrary" Path="|TrxLibrary|" AssemblyName="|TrxLibrary;AssemblyName|" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="TestAttributes" Path="|TestAttributes|" AssemblyName="|TestAttributes;AssemblyName|" />
+  </Assets>
+</PackageManifest>

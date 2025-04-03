@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Altimesh.TestRunner.Process": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\hybridizer-software-suite\\target\\GeneralTestsCode.dll\" GeneralTestsCode.Maths.Test \"testCombination\" \"C:\\Users\\regis\\AppData\\Local\\Temp\\tmp1e10zw.tmp\" 0",
+      "workingDirectory": "D:\\hybridizer-software-suite\\target"
+    }
+  }
+}

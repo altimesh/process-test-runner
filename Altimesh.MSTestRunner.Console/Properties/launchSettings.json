@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Altimesh.TestRunner.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "-dllName D:\\hybridizer-software-suite\\target\\GeneralTestsCode.dll -trxName D:\\hybridizer-software-suite\\target\\toto.trx",
+      "workingDirectory": "D:\\hybridizer-software-suite\\target"
+    }
+  }
+}

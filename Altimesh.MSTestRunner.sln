@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTestProject", "SampleTestProject\SampleTestProject.csproj", "{14C2E8F2-AB18-42A2-BC77-793011DFB73C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitSample", "NUnitSample\NUnitSample.csproj", "{979D5928-B564-487B-8897-F390BF96FAFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrxLibrary", "TrxLibrary\TrxLibrary.csproj", "{0395DE05-973F-45F0-A924-E72B0B608EFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAttributes", "TestAttributeUtils\TestAttributes.csproj", "{58EEE043-3617-46BC-ADDE-28FD4A682AB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altimesh.TestRunner.Process", "Altimesh.MSTestRunner.Process\Altimesh.TestRunner.Process.csproj", "{1E28D936-7062-4409-8685-EEF55CB588AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altimesh.TestRunner.Library", "Altimesh.MSTestRunner.Library\Altimesh.TestRunner.Library.csproj", "{31969C4E-A58C-4DAB-A35C-C73EAC62C736}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altimesh.TestRunner.Console", "Altimesh.MSTestRunner.Console\Altimesh.TestRunner.Console.csproj", "{8D88F2B1-22BA-480D-A27C-8EF19290DFC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altimesh.TrxDifference", "Altimesh.TrxDifference\Altimesh.TrxDifference.csproj", "{7705DCC4-2964-4809-9918-E5B5B4143C8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14C2E8F2-AB18-42A2-BC77-793011DFB73C}.Debug|x64.ActiveCfg = Debug|x64
+		{14C2E8F2-AB18-42A2-BC77-793011DFB73C}.Release|x64.ActiveCfg = Release|x64
+		{979D5928-B564-487B-8897-F390BF96FAFE}.Debug|x64.ActiveCfg = Debug|x64
+		{979D5928-B564-487B-8897-F390BF96FAFE}.Release|x64.ActiveCfg = Release|x64
+		{0395DE05-973F-45F0-A924-E72B0B608EFC}.Debug|x64.ActiveCfg = Debug|x64
+		{0395DE05-973F-45F0-A924-E72B0B608EFC}.Debug|x64.Build.0 = Debug|x64
+		{0395DE05-973F-45F0-A924-E72B0B608EFC}.Release|x64.ActiveCfg = Release|x64
+		{0395DE05-973F-45F0-A924-E72B0B608EFC}.Release|x64.Build.0 = Release|x64
+		{58EEE043-3617-46BC-ADDE-28FD4A682AB7}.Debug|x64.ActiveCfg = Debug|x64
+		{58EEE043-3617-46BC-ADDE-28FD4A682AB7}.Debug|x64.Build.0 = Debug|x64
+		{58EEE043-3617-46BC-ADDE-28FD4A682AB7}.Release|x64.ActiveCfg = Release|x64
+		{58EEE043-3617-46BC-ADDE-28FD4A682AB7}.Release|x64.Build.0 = Release|x64
+		{1E28D936-7062-4409-8685-EEF55CB588AF}.Debug|x64.ActiveCfg = Debug|x64
+		{1E28D936-7062-4409-8685-EEF55CB588AF}.Debug|x64.Build.0 = Debug|x64
+		{1E28D936-7062-4409-8685-EEF55CB588AF}.Release|x64.ActiveCfg = Release|x64
+		{1E28D936-7062-4409-8685-EEF55CB588AF}.Release|x64.Build.0 = Release|x64
+		{31969C4E-A58C-4DAB-A35C-C73EAC62C736}.Debug|x64.ActiveCfg = Debug|x64
+		{31969C4E-A58C-4DAB-A35C-C73EAC62C736}.Debug|x64.Build.0 = Debug|x64
+		{31969C4E-A58C-4DAB-A35C-C73EAC62C736}.Release|x64.ActiveCfg = Release|x64
+		{31969C4E-A58C-4DAB-A35C-C73EAC62C736}.Release|x64.Build.0 = Release|x64
+		{8D88F2B1-22BA-480D-A27C-8EF19290DFC0}.Debug|x64.ActiveCfg = Debug|x64
+		{8D88F2B1-22BA-480D-A27C-8EF19290DFC0}.Debug|x64.Build.0 = Debug|x64
+		{8D88F2B1-22BA-480D-A27C-8EF19290DFC0}.Release|x64.ActiveCfg = Release|x64
+		{8D88F2B1-22BA-480D-A27C-8EF19290DFC0}.Release|x64.Build.0 = Release|x64
+		{7705DCC4-2964-4809-9918-E5B5B4143C8F}.Debug|x64.ActiveCfg = Debug|x64
+		{7705DCC4-2964-4809-9918-E5B5B4143C8F}.Debug|x64.Build.0 = Debug|x64
+		{7705DCC4-2964-4809-9918-E5B5B4143C8F}.Release|x64.ActiveCfg = Release|x64
+		{7705DCC4-2964-4809-9918-E5B5B4143C8F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3BF05EB-F434-41AB-8352-8652498DD3BB}
+	EndGlobalSection
+EndGlobal
