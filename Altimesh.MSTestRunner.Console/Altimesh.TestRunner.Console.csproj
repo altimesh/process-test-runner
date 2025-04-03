@@ -7,7 +7,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AssemblyTitle>Altimesh.TrxGeneration.Program</AssemblyTitle>
     <Product>Altimesh.TrxGeneration.Program</Product>
-    <Copyright>Copyright ©  2015</Copyright>
+    <Copyright>Copyright © 2025</Copyright>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <Platforms>x64</Platforms>
@@ -29,6 +29,16 @@
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
     <BaseOutputPath>D:\hybridizer-software-suite\target</BaseOutputPath>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackAsTool>True</PackAsTool>
+    <ToolCommandName>process-test-runner</ToolCommandName>
+    <RepositoryUrl>https://github.com/altimesh/process-test-runner</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/altimesh/process-test-runner</PackageProjectUrl>
+    <Company>Altimesh</Company>
+    <Authors>JeWaVe</Authors>
+    <PackageId>Altimesh.ProcessTestRunner</PackageId>
+    <Title>Altimesh Process Test Runner</Title>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <OutputPath>..\target\</OutputPath>
@@ -59,10 +69,16 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Altimesh.MSTestRunner.Library\Altimesh.TestRunner.Library.csproj" />
+    <ProjectReference Include="..\Altimesh.MSTestRunner.Library\Altimesh.TestRunner.Library.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>
